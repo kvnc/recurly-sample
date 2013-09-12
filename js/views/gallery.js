@@ -28,11 +28,11 @@ define([
 			if (this.options.collection.at(this.options.index-1) !== undefined) {
 				var asset = this.options.collection.at(--this.options.index);
 				var template = _.template(AssetTemplate, {asset: asset.attributes});
-				if ($('#asset-panel .asset').length > 1) {
-					$('#asset-panel .asset:last').remove();;
+				if ($('.asset').length > 1) {
+					$('.asset:last').remove();;
 				}
 				$('#asset-panel').prepend(template);
-				$('#asset-panel .asset:last').addClass('leftTrans');
+				$('.asset:last').addClass('leftTrans');
 			}
 		},
 
@@ -40,11 +40,11 @@ define([
 			if (this.options.collection.at(this.options.index+1) !== undefined) {
 				var asset = this.options.collection.at(++this.options.index);
 				var template = _.template(AssetTemplate, {asset: asset.attributes});
-				if ($('#asset-panel .asset').length > 1) {
-					$('#asset-panel .asset:last').remove();;
+				if ($('.asset').length > 1) {
+					$('.asset:last').remove();;
 				}
 				$('#asset-panel').prepend(template);
-				$('#asset-panel .asset:last').addClass('leftTrans');
+				$('.asset:last').addClass('leftTrans');
 			}
 		}
 

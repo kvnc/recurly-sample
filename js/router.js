@@ -15,6 +15,7 @@ define([
     var app_router = new AppRouter;
 
     app_router.on('route:defaultAction', function () {
+      // ideally this would be bootstrapped from the server instead of making an extra call
       var assetsCollection = new AssetsCollection;
       assetsCollection.fetch({
         success: function() {
