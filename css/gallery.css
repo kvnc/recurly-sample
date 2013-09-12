@@ -1,0 +1,19 @@
+#gallery {width:480px;font-family: Arial;}
+#asset-panel {list-style: none;padding:0px;position: relative;top: 20px;}
+.asset {width:480px;height:800px;background-color: #fff;position:absolute;}
+.asset p {font-size: 14px;}
+.asset h2 {font-size:19px;}
+.asset a {color:#000;font-size: 15px;text-transform: uppercase;}
+#nav {float:left;width:100%;font-size:12px;border-bottom: 1px solid #000;padding-bottom: 5px;}
+#nav a {cursor:pointer;}
+#nav #back {float:left;}
+#nav #next {float:right;}
+
+.leftTrans {
+	left:-520px;
+  	-webkit-transition:left .8s linear;
+  	-moz-transition:left .8s linear;
+  	-o-transition:left .8s linear;
+  	transition:left .8s ease-in-out;
+}
+
